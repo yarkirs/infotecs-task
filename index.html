@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>infotecs test</title>
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="table-wrap">
+            <table class="table" id="table">
+                <thead>
+                    <h2>Infotecs table task</h2>
+                    <tr class="table-columns">
+                        <!-- <th></th> --><!-- Колонка для кнопок редактирования -->
+                        <th class="table-col col-name" onclick="sortTable(0)" title="Нажмите для сортировки по имени">Name</th>
+                        <th class="table-col col-lastName" onclick="sortTable(1)" title="Нажмите для сортировки по фамилии">Last Name</th>
+                        <th class="table-col col-about" onclick="sortTable(1)" title="Нажмите для сортировки по описанию">About</th>
+                        <th class="table-col col-colorEyes" onclick="sortTable(1)" title="Нажмите для сортировки по цвету глаз">Color eyes</th>
+                    </tr> <!--ряд с ячейками заголовков-->
+                </thead>
+               
+                <tbody>
+                    <!-- <tr>
+                        <td class="table-edit"><i class="fas fa-edit"></i></td>
+                        <td class="table-string string-name">Иван</td>
+                        <td class="table-string string-lastName">Иванов</td>
+                        <td class="table-string string-about">Далеко-далеко за словесными горами в стране гласных, и согласных живут, рыбные тексты. Языком вершину парадигматическая грустный послушавшись, составитель своих которое взобравшись снова.</td>
+                        <td class="table-string string-colorEyes">Голубые <i class="far fa-eye"></i></td>
+                    </tr> -->
+                    <!--ряд с ячейками тела таблицы-->
+                </tbody>
+                  
+
+            </table>
+
+            <div class="pagination">
+              <a href="#"><i class="fas fa-arrow-left"></i></a>
+              <a href="#" class="active">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#"><i class="fas fa-arrow-right"></i></a>
+            </div>
+
+        
+        </div>
+    </div>
+
+    
+    <!-- Add Data Base -->
+    <script src="js/data.js"></script>
+    <!-- Script add table elements-->
+    <script src="js/script.js"></script>
+    <!-- Sort Table -->
+    <script src="js/sort.js"></script>
+</body>
+</html>
